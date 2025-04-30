@@ -1,0 +1,482 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  
+  nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #007BFF;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+  }
+  
+  .intro {
+    max-width: 500px;
+  }
+  
+  .intro p {
+    font-size: 18px;
+  }
+  
+  .intro h2 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+  
+  .intro h3 {
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .buttons button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .socials {
+    margin-top: 10px;
+  }
+  
+  .socials i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #333;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .about-image img {
+    width: 300px;
+    border-radius: 1.5rem;
+    object-fit: cover;
+  }
+  
+  .about-info {
+    max-width: 650px;
+    text-align: left;
+  }
+  
+  .info-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #ddd;
+    text-align: center;
+  }
+  
+  .card .icon {
+    font-size: 1.5rem;
+  }
+  
+  .card h3 {
+    margin: 0.5rem 0;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  /* Experience */
+  #experience {
+    padding: 60px 20px;
+    background: #eef6ff;
+    text-align: center;
+  }
+  
+  #experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .experience-box {
+    max-width: 500px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: left;
+  }
+  
+  .experience-box h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .experience-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .experience-content article {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* Projects */
+  .projects-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .project-box {
+    width: 220px;
+    height: 150px;
+    background: #f1f1f1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-weight: bold;
+  }
+  
+  /* Contact */
+  .contact-section {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .contact-section form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .contact-section button {
+    padding: 12px;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .contact-section button:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero, .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .experience-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  .contact-me-section {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #fff;
+    padding: 60px 20px 0 20px;
+  }
+  
+  .contact-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2.2rem;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .contact-info-box {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #888;
+    border-radius: 2.5rem;
+    padding: 1.2rem 2.5rem;
+    gap: 1.2rem;
+    margin-bottom: 4rem;
+    background: #fff;
+    font-size: 1.25rem;
+  }
+  
+  .contact-icon {
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+  
+  .contact-email,
+  .contact-linkedin {
+    color: #222;
+    font-size: 1.15rem;
+    margin-right: 2rem;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .contact-linkedin {
+    margin-right: 0;
+  }
+  
+  .contact-nav {
+    display: flex;
+    gap: 2.2rem;
+    margin-bottom: 2.2rem;
+  }
+  
+  .contact-nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    transition: color 0.2s;
+  }
+  
+  .contact-nav a:hover {
+    color: #555;
+  }
+  
+  .contact-footer {
+    color: #888;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  /* Responsive for Contact Me section */
+  @media (max-width: 600px) {
+    .contact-info-box {
+      flex-direction: column;
+      gap: 0.8rem;
+      padding: 1rem 1.2rem;
+      font-size: 1rem;
+    }
+    .contact-title {
+      font-size: 2rem;
+    }
+    .contact-nav {
+      gap: 1rem;
+      font-size: 1rem;
+    }
+  }
+  .projects-section {
+    padding: 60px 0 0 0;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .projects-subtitle {
+    color: #6b6b6b;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projects-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .project-card {
+    background: #fafafa;
+    border: 1.5px solid #bbb;
+    border-radius: 2.2rem;
+    padding: 32px 28px 28px 28px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s;
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+  
+  .project-img {
+    width: 90%;
+    border-radius: 1.2rem;
+    margin-bottom: 18px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+  }
+  
+  .project-name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #111;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .project-btns {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .project-btn {
+    padding: 8px 22px;
+    border: 1.5px solid #111;
+    border-radius: 2rem;
+    background: #fff;
+    color: #111;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s, border 0.15s;
+  }
+  
+  .project-btn:hover {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .projects-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+    .project-card {
+      width: 90vw;
+      max-width: 400px;
+    }
+  }
+  
+  
